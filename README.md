@@ -9,7 +9,7 @@
 
 This is a docker container image for sphinx building. It extends official sphinx docker image `sphinxdoc/sphinx`([@GitHub](https://www.github.com/sphinx-doc/docker)) with usesful plugins.
 
-These modules are included:
+These modules are included (see `RELEASE` for latest versions):
 
 - ...
 - Sphinx                       : 5.3.0
