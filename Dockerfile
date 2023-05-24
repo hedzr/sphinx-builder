@@ -46,10 +46,10 @@ RUN echo "APT_MIRROR: '${APT_MIRROR}' / '${mirror_site}'"; \
 
 # for debian: zlib1g-dev libjpeg-dev musl-dev linux-headers-amd64
 # for ubuntu: zlib-dev jpeg-dev musl-dev linux-headers
-RUN buildDeps="curl wget build-essential make \
+RUN buildDeps="curl wget build-essential \
     python3-dev zlib1g-dev libjpeg-dev musl-dev linux-headers-amd64"; \
     fetchDeps=" \
-    python3 python3-pip \
+    python3 python3-pip make \
     "; apt-get install -y --no-install-recommends $fetchDeps \
     && apt-get install -y --no-install-recommends $buildDeps \
     && echo "Current TimeZone updated: $(locale -a)" && date +'%z' \
