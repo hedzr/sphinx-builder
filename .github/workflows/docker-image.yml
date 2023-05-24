@@ -10,7 +10,7 @@ on:
 env:
   # sphinxdoc/sphinx, sphinxdoc/sphinx-latexpdf
   BASEIMAGE: sphinxdoc/sphinx
-  NAME: sphinx-builder-pre
+  NAME: sphinx-builder
 
 jobs:
 
