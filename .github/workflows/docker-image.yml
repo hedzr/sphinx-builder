@@ -35,7 +35,7 @@ jobs:
 
   docker:
     runs-on: ubuntu-latest
-    # environment: Production
+    environment: Production
     steps:
       - name: Checkout
         uses: actions/checkout@v3
