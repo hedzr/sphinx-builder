@@ -1,11 +1,16 @@
 # sphinx-builder
 
-This is a docker container for sphinx building. It extends official sphinx docker image `sphinxdoc/sphinx`([@GitHub](https://www.github.com/sphinx-doc/docker)) with usesful plugins.
+[![build](https://github.com/hedzr/sphinx-builder/actions/workflows/docker-image.yml/badge.svg)](https://github.com/hedzr/sphinx-builder/actions/workflows/docker-image.yml)<!--
+![release](https://img.shields.io/github/v/release/hedzr/sphinx-builder) -->
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/hedzr/sphinx-builder.svg?label=release)](https://github.com/hedzr/sphinx-builder/releases)
+[![Docker Pulls](https://img.shields.io/docker/pulls/hedzr/sphinx-builder)](https://hub.docker.com/r/hedzr/sphinx-builder)
+![Docker Image Version (latest semver)](https://img.shields.io/docker/v/hedzr/sphinx-builder)
+![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/hedzr/sphinx-builder)
+
+This is a docker container image for sphinx building. It extends official sphinx docker image `sphinxdoc/sphinx`([@GitHub](https://www.github.com/sphinx-doc/docker)) with usesful plugins.
 
 These modules are included:
 
-- matplotlib
-- numpy
 - ...
 - Sphinx                       : 5.3.0
 - sphinx-autobuild             : 2021.3.14
@@ -29,6 +34,19 @@ These modules are included:
 - sphinxext-opengraph          : 0.8.2
 - sphinxext-rediraffe          : 0.2.7
 - ...
+- breathe                      : 4.35.0
+- linkify-it-py                : 2.0.2
+- markdown-it-py               : 2.1.0
+- matplotlib                   : 3.7.1
+- myst-nb                      : 0.17.2
+- myst-parser                  : 0.18.1
+- numpy                        : 1.24.3
+
+These sphinx themes are pre-included:
+
+- sphinx-book-theme>=1.0.1
+- sphinx-rtd-theme>=1.2.0
+- furo>=2023.3.27
 
 ## Usage
 
