@@ -1,2 +1,3 @@
 *.local
 *.log
+*.code-workspace
